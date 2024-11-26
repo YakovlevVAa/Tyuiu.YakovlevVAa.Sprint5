@@ -29,28 +29,9 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task0.V21
             string res = ds.SaveToFileTextData(x);
             Console.WriteLine("Файл: " + res);
             Console.WriteLine("Создан!");
-            String line;
-            try
-            {
-                StreamReader sr = new StreamReader(res);
-                line = sr.ReadLine();
-                while (line != null)
-                {
-                    Console.WriteLine(line);
-                    line = sr.ReadLine();
-                }
-                sr.Close();
-                
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine("Результат = " + e.Message);
-            }
-            finally
-            {
-                
-            }
-
+            string abc = File.ReadAllText(res);
+            Console.WriteLine(abc);
+           
 
         }
     }
