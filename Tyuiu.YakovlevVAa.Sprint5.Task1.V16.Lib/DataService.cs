@@ -17,13 +17,10 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task1.V16.Lib
             string strY;
             for (double x = startValue; x <= stopValue; x++)
             {
-                y = Math.Sin(x) + (2 * x) / 3 - Math.Cos(x) * 4 * x;
+                y = Math.Sin(x) + ((2 * x) / 3.0) - (Math.Cos(x) * 4 * x);
                 y = Math.Round(y, 2);
                 strY = Convert.ToString(y);
-                if (double.IsInfinity(y) ||  double.IsNaN(y))
-                {
-                    y = 0;
-                }
+                
                 if ( x != stopValue)
                 {
                     File.AppendAllText(path, strY + Environment.NewLine);
@@ -32,7 +29,11 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task1.V16.Lib
                 {
                     File.AppendAllText(path, strY);
                 }
-                
+                if (double.IsInfinity(y) || double.IsNaN(y))
+                {
+                    y = 0;
+                }
+
             }
             return path;
         }
