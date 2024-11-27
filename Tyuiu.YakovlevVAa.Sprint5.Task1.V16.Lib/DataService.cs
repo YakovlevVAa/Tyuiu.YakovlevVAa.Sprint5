@@ -17,7 +17,7 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task1.V16.Lib
             string strY;
             for (double x = startValue; x <= stopValue; x++)
             {
-                y = Math.Sin(x) + ((2 * x) / 3.0) - (Math.Cos(x) * 4 * x);
+                y = Math.Sin(x) + ((2.0 * x) / 3.0) - (Math.Cos(x) * 4.0 * x);
                 y = Math.Round(y, 2);
                 strY = Convert.ToString(y);
                 
