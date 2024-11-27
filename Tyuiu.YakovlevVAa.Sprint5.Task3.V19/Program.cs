@@ -1,11 +1,12 @@
-﻿using Tyuiu.YakovlevVAa.Sprint5.Task3.V19.Lib;
+﻿using System.IO;
+using Tyuiu.YakovlevVAa.Sprint5.Task3.V19.Lib;
 namespace Tyuiu.YakovlevVAa.Sprint5.Task3.V19
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            
+            string path = @"C:\Users\victor\AppData\Local\Temp\OutPutFileTask3.bin";
             int x = 3;
             DataService ds = new DataService();
             Console.WriteLine("***************************************************************************");
@@ -26,12 +27,16 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task3.V19
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            
+
             string res = ds.SaveToFileTextData(x);
             Console.WriteLine("Файл: " + res);
             Console.WriteLine("Создан!");
-            
+            using (BinaryReader reader = new BinaryReader(File.Open(path, FileMode.Open)))
+            {
+                int abc = reader.ReadInt32();
+                Console.WriteLine(abc);
 
+            }
         }
     }
 }
