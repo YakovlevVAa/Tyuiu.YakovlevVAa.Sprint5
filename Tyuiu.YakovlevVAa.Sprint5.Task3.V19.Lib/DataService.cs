@@ -10,6 +10,7 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task3.V19.Lib
         {
             string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask3.bin");
             double y = (Math.Pow((double)x, 2) * 2 - 1) / (Math.Sqrt(Math.Pow((double)x, 2) - 2));
+            
             y = Math.Round(y, 3);   
             using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.OpenOrCreate), Encoding.UTF8))
             {
