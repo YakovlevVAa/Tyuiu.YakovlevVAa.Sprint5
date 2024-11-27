@@ -5,7 +5,7 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task3.V19
     {
         static void Main(string[] args)
         {
-            string path = @"C:\Users\victor\AppData\Local\Temp\OutPutFileTask3.bin";
+            
             int x = 3;
             DataService ds = new DataService();
             Console.WriteLine("***************************************************************************");
@@ -26,15 +26,11 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task3.V19
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            double y = Math.Round((Math.Pow((double)x, 2) * 2 - 1) / (Math.Sqrt(Math.Pow(x, 2) - 2)), 3);
+            double y = Math.Round((2*(Math.Pow((double)x, 2) - 1)) / (Math.Sqrt(Math.Pow((double)x, 2) - 2)), 3);
             string res = ds.SaveToFileTextData(x);
             Console.WriteLine("Файл: " + res);
             Console.WriteLine("Создан!");
-            using (BinaryReader reader = new BinaryReader(File.Open(path, FileMode.Open)))
-            {
-                int abc = reader.ReadInt32();
-                Console.WriteLine($"{abc}");
-            }
+            
 
         }
     }

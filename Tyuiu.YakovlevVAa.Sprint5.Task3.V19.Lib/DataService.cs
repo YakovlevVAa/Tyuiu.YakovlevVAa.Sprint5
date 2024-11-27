@@ -9,7 +9,8 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task3.V19.Lib
         public string SaveToFileTextData(int x)
         {
             string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask3.bin");
-            double y = Math.Round((Math.Pow((double)x, 2) * 2 - 1) / (Math.Sqrt(Math.Pow(x, 2) - 2)), 3);
+            double y = (Math.Pow((double)x, 2) * 2 - 1) / (Math.Sqrt(Math.Pow(x, 2) - 2));
+            y = Math.Round(y, 3);   
             using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.OpenOrCreate), Encoding.UTF8))
             {
                 writer.Write(BitConverter.GetBytes(y));
