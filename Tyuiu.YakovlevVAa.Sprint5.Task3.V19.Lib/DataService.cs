@@ -12,9 +12,9 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task3.V19.Lib
             double y = (Math.Pow((double)x, 2) * 2 - 1) / (Math.Sqrt(Math.Pow((double)x, 2) - 2));
             
             y = Math.Round(y, 3);
-            using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.OpenOrCreate), Encoding.UTF8))
+            using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.Create)))
             {
-                writer.Write(BitConverter.GetBytes(y));
+                writer.Write(y);
             }
             return path;
         }
