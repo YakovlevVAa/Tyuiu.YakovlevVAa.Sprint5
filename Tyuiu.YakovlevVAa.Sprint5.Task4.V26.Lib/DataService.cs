@@ -8,10 +8,9 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task4.V26.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            double x = 0;
-            string strY = File.ReadAllText(path);
-            x = double.Parse(strY);
-            double y = Math.Round(Math.Cos(x) * (Math.Pow(x, 3) + Math.Sin(x)), 3);
+            
+            string strX = File.ReadAllText(path);
+            double y = Math.Round(Math.Cos(Convert.ToDouble(strX, new System.Globalization.CultureInfo("en-US"))) * (Math.Pow(Convert.ToDouble(strX, new System.Globalization.CultureInfo("en-US")), 3) + Math.Sin(Convert.ToDouble(strX, new System.Globalization.CultureInfo("en-US")))), 3);
             return y;
         }
     }
