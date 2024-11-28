@@ -6,7 +6,6 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task3.V19
     {
         static void Main(string[] args)
         {
-            string path = @"C:\Users\victor\AppData\Local\Temp\OutPutFileTask3.bin";
             int x = 3;
             DataService ds = new DataService();
             Console.WriteLine("***************************************************************************");
