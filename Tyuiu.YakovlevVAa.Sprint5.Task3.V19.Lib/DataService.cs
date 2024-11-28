@@ -16,7 +16,7 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task3.V19.Lib
             bool fileExists = fileInfo.Exists;
             if (fileExists) { File.Delete(path); }
             double result = (2 * Math.Pow(x, 2) - 1) / (Math.Sqrt(Math.Pow(x, 2) - 2));
-            result = Math.Round(result, 3);
+            result = Math.Round(result, 2);
 
             using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.OpenOrCreate), Encoding.UTF8))
             {
