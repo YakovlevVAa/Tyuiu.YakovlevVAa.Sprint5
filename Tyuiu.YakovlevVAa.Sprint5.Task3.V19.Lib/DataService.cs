@@ -10,6 +10,11 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task3.V19.Lib
         {
             string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask3.bin");
 
+            
+           
+            FileInfo fileInfo = new FileInfo(path);
+            bool fileExists = fileInfo.Exists;
+            if (fileExists) { File.Delete(path); }
             double result = (2 * Math.Pow(x, 2) - 1) / (Math.Sqrt(Math.Pow(x, 2) - 2));
             result = Math.Round(result, 3);
 
