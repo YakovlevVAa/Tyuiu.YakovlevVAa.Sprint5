@@ -31,12 +31,7 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task3.V19
             string res = ds.SaveToFileTextData(x);
             Console.WriteLine("Файл: " + res);
             Console.WriteLine("Создан!");
-            using (BinaryReader reader = new BinaryReader(File.Open(path, FileMode.Open)))
-            {
-                int abc = reader.ReadInt32();
-                Console.WriteLine(abc);
-
-            }
+            
         }
     }
 }
