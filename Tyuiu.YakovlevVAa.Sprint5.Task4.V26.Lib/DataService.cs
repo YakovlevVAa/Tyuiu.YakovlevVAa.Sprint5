@@ -8,7 +8,6 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task4.V26.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            path = @"C:\DataSprint5\InPutDataFileTask4V26.txt";
             double x = 0;
             string strY = File.ReadAllText(path);
             x = double.Parse(strY);
