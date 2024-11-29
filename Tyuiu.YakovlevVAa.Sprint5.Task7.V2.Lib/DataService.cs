@@ -14,7 +14,7 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task7.V2.Lib
             {
                 File.Delete(pathSaveFile);
             }
-            string result = Regex.Replace(text, @"\p{IsCyrillic}", "#");
+            string result = Regex.Replace(text, @"\p{IsDigit}", "#");
             File.WriteAllText(pathSaveFile, result);
             return result;
         }
