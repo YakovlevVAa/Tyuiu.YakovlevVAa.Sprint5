@@ -7,7 +7,7 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task2.V5.Test
         [TestMethod]
         public void ValidSaveToFileTextData()
         {
-            string path = @"C:\Users\victor\AppData\Local\Temp\OutPutFileTask2.txt";
+            string path = @"C:\Users\victor\AppData\Local\Temp\OutPutFileTask2.csv";
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             bool wait = true;
