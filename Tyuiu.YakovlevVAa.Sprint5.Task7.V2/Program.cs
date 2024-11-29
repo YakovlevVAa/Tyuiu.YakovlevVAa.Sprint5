@@ -22,12 +22,14 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task6.V6
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
             string path = @"C:\DataSprint5\InPutDataFileTask7V2.txt";
+            string pathSaveFile = Path.Combine(new string[] { Path.GetTempPath(), "OutPutDataFileTask7V2.txt" });
             Console.WriteLine("Данные находятся в файле: " + path);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            string res = ds.LoadDataAndSave(path);
-            Console.WriteLine(res);
+            Console.WriteLine("Находится в файле: ");
+            pathSaveFile = ds.LoadDataAndSave(path);
+            Console.WriteLine(pathSaveFile);
         }
     }
 }

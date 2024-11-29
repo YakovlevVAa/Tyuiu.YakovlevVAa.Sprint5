@@ -7,15 +7,15 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task7.V2.Lib
     {
         public string LoadDataAndSave(string path)
         {
-            
+            string pathSaveFile = Path.Combine(new string[] { Path.GetTempPath(), "OutPutDataFileTask7V2.txt" });
             string text = File.ReadAllText(path);
-            FileInfo fileInfo = new FileInfo(path);
+            FileInfo fileInfo = new FileInfo(pathSaveFile);
             if (fileInfo.Exists)
             {
-                File.Delete(path);
+                File.Delete(pathSaveFile);
             }
             string result = Regex.Replace(text, @"\p{IsCyrillic}", "#");
-            File.WriteAllText(path, result);
+            File.WriteAllText(pathSaveFile, result);
             return result;
         }
     }
