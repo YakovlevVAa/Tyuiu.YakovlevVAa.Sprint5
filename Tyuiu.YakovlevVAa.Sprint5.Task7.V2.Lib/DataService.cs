@@ -14,7 +14,7 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task7.V2.Lib
             {
                 File.Delete(pathSaveFile);
             }
-            string result = Regex.Replace(text, @"\p{IsDigit}", "#");
+            string result = Regex.Replace(text, @"^\d$", "#");
             File.WriteAllText(pathSaveFile, result);
             return result;
         }
