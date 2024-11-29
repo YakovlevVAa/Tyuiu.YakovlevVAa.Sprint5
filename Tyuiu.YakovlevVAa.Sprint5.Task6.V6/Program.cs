@@ -1,5 +1,5 @@
-﻿using Tyuiu.YakovlevVAa.Sprint5.Task4.V26.Lib;
-namespace Tyuiu.YakovlevVAa.Sprint5.Task4.V26
+﻿using Tyuiu.YakovlevVAa.Sprint5.Task6.V6.Lib;
+namespace Tyuiu.YakovlevVAa.Sprint5.Task6.V6
 {
     internal class Program
     {
@@ -10,18 +10,18 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task4.V26
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
             Console.WriteLine("* Тема: Класс File                                                        *");
-            Console.WriteLine("* Задание #4                                                              *");
-            Console.WriteLine("* Вариант #26                                                             *");
+            Console.WriteLine("* Задание #6                                                              *");
+            Console.WriteLine("* Вариант #6                                                              *");
             Console.WriteLine("* Выполнил: Яковлев Виктор Александрович | ИИПб-24-2                      *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Дан файл  в котором есть вещественное значение. Прочитать значение из   *");
-            Console.WriteLine("* файла и подставить вместо Х в формуле. Вычислить значение по формуле и  *");
-            Console.WriteLine("* и вернуть полученный результат на консоль.                              *");
+            Console.WriteLine("* Написать программу, которая находит количество строчных русских букв    *");
+            Console.WriteLine("* в заданной строке.                                                      *");
+            Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            string path = @"C:\DataSprint5\InPutDataFileTask4V26.txt";
+            string path = @"C:\DataSprint5\InPutDataFileTask6V6.txt";
             Console.WriteLine("Данные находятся в файле: " + path);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");

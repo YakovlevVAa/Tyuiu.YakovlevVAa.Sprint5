@@ -8,6 +8,7 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task3.V19
         {
             int x = 3;
             DataService ds = new DataService();
+            Console.Title = "Спринт #5 | Выполнил: Яковлев В. А. | ИИПб-24-2";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
             Console.WriteLine("* Тема: Класс File                                                        *");

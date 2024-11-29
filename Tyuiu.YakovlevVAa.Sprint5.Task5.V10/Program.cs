@@ -6,17 +6,18 @@ namespace Tyuiu.YakovlevVAa.Sprint5.Task5.V10
         static void Main(string[] args)
         {
             DataService ds = new DataService();
+            Console.Title = "Спринт #5 | Выполнил: Яковлев В. А. | ИИПб-24-2";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
             Console.WriteLine("* Тема: Класс File                                                        *");
-            Console.WriteLine("* Задание #4                                                              *");
-            Console.WriteLine("* Вариант #26                                                             *");
+            Console.WriteLine("* Задание #5                                                              *");
+            Console.WriteLine("* Вариант #10                                                             *");
             Console.WriteLine("* Выполнил: Яковлев Виктор Александрович | ИИПб-24-2                      *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Дан файл  в котором есть вещественное значение. Прочитать значение из   *");
-            Console.WriteLine("* файла и подставить вместо Х в формуле. Вычислить значение по формуле и  *");
-            Console.WriteLine("* и вернуть полученный результат на консоль.                              *");
+            Console.WriteLine("* Найти сумму всех четных целых чисел в файле.  Полученный результат      *");
+            Console.WriteLine("* вывести на консоль. У вещественных значений округлить до трёх знаков    *");
+            Console.WriteLine("* после запятой                                                           *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
